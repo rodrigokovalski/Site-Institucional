@@ -36,9 +36,9 @@
 				<img src="images/logo.png" alt="logo">
 			</div>
 			<ul>
-				<li><a href="">Home</a></li>
-				<li><a href="">Empresa</a></li>
-				<li><a href="">Serviços</a></li>
+				<li><a href="#banner">Home</a></li>
+				<li><a href="#about-us">Empresa</a></li>
+				<li><a href="#services">Serviços</a></li>
 				<li><a href="">Portfólio</a></li>
 				<li><a href="">Cases</a></li>
 				<li><a href="">Projetos</a></li>
@@ -47,23 +47,95 @@
 		</div>
 	</nav>
 
-	<section id="banner">
-		
+	<section id="banner"><!--Aqui vou incluir um slider--></section>
+
+	<section class="content" id="about-us">
+		<div class="container">
+			<div class="title">
+				<span>Empresa</span>
+				<h1>Empresa</h1>
+				<p>Fundada em 1992, a Empresa é uma agência especializada em Comunicação, Marketing e Eventos no Rio de Janeiro</p>
+			</div>
+			<div class="content-section">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6">
+						<h2>Nosso objetivo é entregar projetos que combinem inovação, relevância e resultado</h2>
+						<span class="font-italic">O que fazemos:</span>
+						<ul>
+							<li><i class="fa fa-check" aria-hidden="true"></i>Desenvolvemos soluções em marketing promocional e publicidade para o seu negócio</li>
+							<li><i class="fa fa-check" aria-hidden="true"></i>Criamos experiências inesquecíveis, explorando a criatividade e aproximando as empresas de seus consumidores</li>
+							<li><i class="fa fa-check" aria-hidden="true"></i>Produzimos eventos sob medida – corporativos, sociais, culturais e esportivos</li>
+						</ul>
+						<p>Promovemos uma seleção criteriosa de fornecedores e colaboradores para atender a demanda de cada projeto, assegurando transparência e lisura em todas as etapas, por meio de ações inteligentes, sustentáveis e com responsabilidade social</p>
+					</div>
+					<div class="col-xs-12 col-6">
+						<img src="images/about.jpg" alt="Sobre nós">
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
 
-	<script>
-		window.onscroll = function() {myFunction()};
+	<section class="content" id="services">
+		<div class="container">
+			<div class="title">
+				<span>Serviços</span>
+				<h1>Serviços</h1>
+				<p>Temos a solução completa para a gestão de projetos com qualidade, rapidez e eficiência na resolução de problemas</p>
+			</div>
+			<div class="content-section">
+				<div class="row">
+					<div class="col-4">
+							<div class="service">
+								<i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+								<h3>Serviço</h3>
+								<p>Legalização e produção de eventos, campanhas de Live Marketing, ações promocionais, ativação de marca, lançamentos e degustação</p>
+							</div>
+						</div>
+						<div class="col-4">
+							<div class="service">
+								<i class="fa fa-laptop" aria-hidden="true"></i>
+								<h3>Publicidade</h3>
+								<p>Criação de projetos de comunicação visual, campanhas publicitárias, mídia digital, design gráfico, identidade visual e produção gráfica</p>
+							</div>
+						</div>
+						<div class="col-4">
+							<div class="service">
+								<i class="fa fa-handshake-o" aria-hidden="true"></i></i>
+								<h3>Gestão de A&B</h3>
+								<p>Gestão de Negócios em Alimentos e Bebidas, operacionalização em eventos, liderança de equipe, controle financeiro e gestão de colaboradores</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-4">
+							<div class="service">
+								<i class="fa fa-bullseye" aria-hidden="true"></i>
+								<h3>Locação de infraestrutura</h3>
+								<p>Legalização e produção de eventos, campanhas de Live Marketing, ações promocionais, ativação de marca, lançamentos e degustação</p>
+							</div>
+						</div>
+						<div class="col-4">
+							<div class="service">
+								<i class="fa fa-rss" aria-hidden="true"></i>
+								<h3>Produção Editorial</h3>
+								<p>Criação de projetos de comunicação visual, campanhas publicitárias, mídia digital, design gráfico, identidade visual e produção gráfica</p>
+							</div>
+						</div>
+						<div class="col-4">
+							<div class="service">
+								<i class="fa fa-tachometer" aria-hidden="true"></i>
+								<h3>Gestão Esportiva</h3>
+								<p>Gestão de Negócios em Alimentos e Bebidas, operacionalização em eventos, liderança de equipe, controle financeiro e gestão de colaboradores</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-		var navbar = document.getElementById("menu");
 
-		function myFunction() {
-		  if (window.pageYOffset >=10) {
-		    navbar.classList.add("sticky");
-		  } else {
-		    navbar.classList.remove("sticky");
-		  }
-		}
-	</script>
-	
+	<script type="text/javascript" src="js/global.js"></script>
 </body>
 </html>
