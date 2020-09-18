@@ -107,6 +107,49 @@ nav ul li a:after{
 	max-height: 40px;
 }
 
+/*Menu Mobile*/
+
+.toggle-bars{
+	display: none;
+	margin: 0 15px;
+	float: right;
+	cursor: pointer;
+}
+.close-toggle{
+	display: none;
+	position: absolute;
+	top: 5px;
+	right: 20px;
+	cursor: pointer;
+	z-index: 2;
+}
+
+@media (max-width: 992px){
+	#navbar {
+		display: none;
+		position: absolute;
+		width: 100%;
+		right: 0;
+		top: 0px;
+		background: #fff;
+		height: auto;
+		z-index: 1;
+	}
+	#navbar li{
+		text-align: center;
+		float: none;
+		display: block;
+		width: 100%;  
+	}
+	.toggle-bars{
+		display: block;
+	}
+	#top-bar{
+		display: none;
+	}
+}
+
+
 /*Banner inicial, slider*/
 
 section#banner {
@@ -117,6 +160,7 @@ section#banner {
 	background-attachment: fixed;
 	background-size: cover;
 	align-content: center;
+	margin: 0 auto;
 	align-items: center;
 	clip-path: circle(300vh at 50% -160vh);
 }
