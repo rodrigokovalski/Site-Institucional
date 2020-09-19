@@ -225,7 +225,7 @@ section.content .content-section img{
 
 
 section#services{
-	background-color: #fdfdfd;
+	background-color: #f4f4f4;
 }
 section.content .service{
 	border-radius: 8px;
@@ -261,3 +261,190 @@ section.content .service:hover h3{
 	color: #444;
 	margin: 0;
 }
+
+/*PORTIFÓLIO*/	
+
+.caixa-port{
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+.item:hover .caixa-port img{
+	filter: brightness(40%);
+	transform: scale(1.1);
+}
+.caixa-port img{
+	width: 100%;
+	transition: 0.5s;
+}
+.img-content{
+	position: absolute;
+	transform: translate(-50%,-50%);
+	top: 40%;
+	left: 50%;
+	width: 100%;
+	text-align: center;
+	opacity: 0;
+	transition: 0.5s;
+}
+.item:hover .img-content{
+	top: 55%;
+	opacity: 1;
+}
+.img-content h3{
+	font-size: 22px;
+	font-weight: bold;
+	color: #fff;
+	text-transform: uppercase;
+}
+.img-content p {
+	font-size: 19px;
+	color: #fff;
+}
+
+.img-content i{
+	background: #fff;
+	padding: 9px 10px;
+	border-radius: 100%;
+	color: #f58c31;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.img-content i:hover{
+	background:#f58c31;
+	color: #fff;
+}
+
+/*CASES*/
+#cases{
+	background-color: #f4f4f4;
+	padding-bottom: 250px;
+}
+.img-case{
+	overflow: hidden;
+	width: 100%;
+}
+.img-case img{
+	width: 100%;
+	filter: grayscale(25%);
+	transition: 0.7s;
+}
+#cases .item{
+	position: relative;
+}
+.case-content{
+	position: absolute;
+	width: 85%;
+	transform: translate(-50%,-30%);
+	left: 50%;
+	top: 100%;
+	padding: 20px;	
+	background: #fff;
+	border-top: 4px solid #fff;
+	transition: 0.5s;
+	overflow: hidden;
+}
+#cases .item:hover h3{
+	color: #f58c31;
+}
+#cases .item:hover .case-content{
+	border-top: 4px solid #f58c31;
+}
+#cases .item:hover .img-case img{
+	transform: scale(1.1);
+	filter: grayscale(0%) brightness(110%);
+}
+.case-content h3{
+	font-size: 22px;
+	font-weight: bold;
+	text-align: center;
+	color: #444;
+	padding: 10px;
+	transition: 0.5s;
+}
+.case-content p{
+	color: #333;
+	padding: 0 20px;
+}
+.case-content a{
+	float: right;
+	text-align: center;
+	text-decoration: none;
+	color: #333;
+	transition: 0.5s;
+}
+.case-content a:hover{
+	color: #f58c31
+}
+.case-content i{
+	padding: 0 10px;
+}
+
+/*Formulário de contato*/
+#contact .info h1 {
+	font-size: 18px;
+	font-weight: bold;
+	display: block;
+	text-align: center;
+}
+#contact .info i{
+	color: #f58c31;
+	padding: 14px;
+}
+#contact .info a{
+	text-decoration: none;
+	color:#444;
+	transition: 0.5s;
+}
+#contact .info a:hover{
+	color: #f58c31;
+}
+
+#contact form{
+	margin-top: 20px;
+	width: 100%;
+}
+
+#contact form .row{
+	margin-bottom: 15px;
+}
+
+#contact button{
+	background-color: #f58c31;
+	padding: 10px 20px
+}
+.center{
+	text-align: center;
+}
+
+#formulario label.titulo {
+    position: absolute;
+    transform: translate(35px, 0);
+    top: 25%;
+    margin: 0;
+    color: #707070
+}
+#formulario label.titulo2{
+	position: absolute;
+    transform: translate(35px, 0);
+    top: -10px;
+    margin: 0;
+    color: #000;
+    left: 0;
+    background:	#fff;
+    font-size:14px;
+}
+#formulario input:focus, #formulario textarea:focus {
+	border-color: #000 !important;
+	box-shadow: none;
+}
+#formulario input:focus + label.titulo, #formulario input:not(:placeholder-shown) + label{
+	transition: 0.35s;
+	top: -10px;
+    left: 0;
+    color: #000;
+    background: #fff;
+    font-size: 14px
+}
+
+
