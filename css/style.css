@@ -164,6 +164,17 @@ section#banner {
 	align-items: center;
 	clip-path: circle(300vh at 50% -160vh);
 }
+section .banner-img{
+	height:30vh;
+	width: 100%;
+	position: relative;
+	background-image: url(../images/background.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	align-content: center;
+	margin: 0 auto;
+	align-items: center;
+}
 
 /*Conteúdo da página*/
 
@@ -268,6 +279,7 @@ section.content .service:hover h3{
 	position: relative;
 	width: 100%;
 	overflow: hidden;
+	margin: 10px 0;
 }
 .item:hover .caixa-port img{
 	filter: brightness(40%);
@@ -316,6 +328,11 @@ section.content .service:hover h3{
 }
 
 /*CASES*/
+@media (max-width: 768px){
+	#cases {
+		padding-bottom: 25px !important
+	}
+}
 #cases{
 	background-color: #f4f4f4;
 	padding-bottom: 250px;
@@ -333,17 +350,27 @@ section.content .service:hover h3{
 	position: relative;
 }
 .case-content{
-	position: absolute;
-	width: 85%;
-	transform: translate(-50%,-30%);
-	left: 50%;
-	top: 100%;
 	padding: 20px;	
 	background: #fff;
 	border-top: 4px solid #fff;
 	transition: 0.5s;
 	overflow: hidden;
+	margin-bottom: 10px;
 }
+@media (min-width: 768px) {
+	.case-content{
+		position: absolute;
+		width: 85%;
+		transform: translate(-50%,-30%);
+		left: 50%;
+		top: 100%;
+		padding: 20px;	
+		background: #fff;
+		border-top: 4px solid #fff;
+		transition: 0.5s;
+		overflow: hidden;
+	}	
+}	
 #cases .item:hover h3{
 	color: #f58c31;
 }
@@ -411,40 +438,64 @@ section.content .service:hover h3{
 
 #contact button{
 	background-color: #f58c31;
-	padding: 10px 20px
+	padding: 10px 20px;
+	color: #222;
+	font-weight: bold;
 }
 .center{
 	text-align: center;
 }
 
-#formulario label.titulo {
-    position: absolute;
-    transform: translate(35px, 0);
-    top: 25%;
-    margin: 0;
-    color: #707070
-}
-#formulario label.titulo2{
+#formulario label{
 	position: absolute;
-    transform: translate(35px, 0);
-    top: -10px;
-    margin: 0;
-    color: #000;
-    left: 0;
-    background:	#fff;
-    font-size:14px;
+	transform: translate(15px,-30px);
+	color: #444;
+	transition: 200ms;
 }
-#formulario input:focus, #formulario textarea:focus {
-	border-color: #000 !important;
+
+#formulario input, #formulario textarea{
+	border-color: #666;
+}
+
+#formulario input:focus, #formulario textarea:focus{
+	border-color: #f58c31;
 	box-shadow: none;
 }
-#formulario input:focus + label.titulo, #formulario input:not(:placeholder-shown) + label{
-	transition: 0.35s;
-	top: -10px;
-    left: 0;
-    color: #000;
-    background: #fff;
-    font-size: 14px
+
+#formulario input:focus + label.titulo{
+	transform: translate(10px, -50px);
+	background: #fff;
 }
 
+#formulario input:not(:placeholder-shown) + label.titulo{
+	transform: translate(10px, -50px);
+	background: #fff;
+}
 
+/*FOOTER*/
+#footer{
+	background: #2d2d30;
+}
+#footer ul{
+	list-style: none;
+    position: absolute;
+    right: 0;
+    top: 15px;
+}
+#footer ul li{
+	float: left;
+	font-size: 25px;
+	margin-left: 15px;
+}
+#footer ul li a{
+	color: #fff;
+	transition: 0.5s;
+}
+#footer p{
+	padding: 15px;
+	color: #fff;
+	font-size: 14px;
+}
+#footer ul li a:hover{
+	color:#f58c31;
+}
