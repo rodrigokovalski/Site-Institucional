@@ -1,13 +1,28 @@
 *{
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 html {
   scroll-behavior: smooth;
 }
 body{
 	font-family: Arial, sans-serif;
+	font-size: 16px;
 }
+
+@keyframes bounce {
+	0%,20%,60%, 100%{
+		transform: translateY(0);
+	}
+	40%{
+		transform: translateY(-20px);
+	}
+	80%{
+		transform: translateY(-15px);
+	}
+}
+
 
 /*Barra do topo*/
 
@@ -439,8 +454,12 @@ section.content .service:hover h3{
 #contact button{
 	background-color: #f58c31;
 	padding: 10px 20px;
-	color: #222;
+	color: #FFFFFF;
 	font-weight: bold;
+	margin-top: 15px;
+}
+#contact button:hover{
+	animation: bounce 850ms ease-in-out; 
 }
 .center{
 	text-align: center;
